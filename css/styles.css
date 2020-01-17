@@ -1,0 +1,112 @@
+0body {
+    margin: 0;
+    background: #dedede;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .gameboard {
+    height: 100vh;
+    width: 100vh;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto;
+    max-height: 60vh;
+    max-width: 60vh;
+  }
+
+  .color {
+    width: 50%;
+    height: 50%;
+    display: inline-block;
+  }
+
+  .left {
+    float: left;
+  }
+
+  .right {
+    float: left;
+  }
+
+  .celeste {
+    background: #22a6b3;
+  }
+
+  .celeste.light {
+    background: #7ed6df;
+  }
+
+  .violeta {
+    background: #be2edd;
+  }
+
+  .violeta.light {
+    background: #e056fd;
+  }
+
+  .naranja {
+    background: #f0932b;
+  }
+
+  .naranja.light {
+    background: #ffbe76;
+  }
+
+  .verde {
+    background: #6ab04c;
+  }
+
+  .verde.light {
+    background: #badc58;
+  }
+
+  .btn-start {
+    width: 400px;
+    height: 100px;
+    background: #ecf0f1;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    position: absolute;
+    top: calc(30% - 50px);
+    left: calc(50% - 200px);
+  }
+
+  .hide {
+    display: none;
+  }
+  *{
+    font-family: 'Arial';
+  }
+
+  .tb_button {
+    padding:1px;
+    cursor:pointer;
+    border-right: 1px solid #8b8b8b;
+    border-left: 1px solid #FFF;
+    border-bottom: 1px solid #fff;
+}
+
+.tb_button.hover {
+     border:2px outset #def;
+     background-color: #f8f8f8 !important;
+    }
+    .ws_toolbar {
+        z-index:100000
+    } 
+    .ws_toolbar .ws_tb_btn {
+        cursor:pointer;
+        border:1px solid #555;
+        padding:3px
+    }
+    .tb_highlight{
+        background-color:yellow
+    } 
+    .tb_hide {
+        visibility:hidden
+    } 
+    .ws_toolbar img {
+        padding:2px;
+        margin:0px;
+    }
