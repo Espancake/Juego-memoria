@@ -3,7 +3,7 @@ const celeste = document.getElementById('celeste')
 const violeta = document.getElementById('violeta')
 const naranja = document.getElementById('naranja')
 const verde = document.getElementById('verde')
-
+const nivelFinal = 10
 
 
 
@@ -15,6 +15,7 @@ class Juego {
         this.siguienteNivel()
     }
     inicializar(){
+        this.elegirColor = this.elegirColor.bind(this)
         btnEmpezar.classList.add('hide')
         this.nivel = 1
         this.colores = {
@@ -31,6 +32,18 @@ class Juego {
 
     siguienteNivel(){
         this.iluminarSecuencia()
+        this.agregarEventosClick()
+    }
+
+    agregarEventosClick(){
+        this.colores.celeste.addEventListener('click', this.elegirColor.bind(this))
+        this.colores.violeta.addEventListener('click', this.elegirColor.bind(this))
+        this.colores.naranja.addEventListener('click', this.elegirColor.bind(this))
+        this.colores.verde.addEventListener('click', this.elegirColor.bind(this))
+    }
+
+    elegirColor(ev){
+        console.log(this)
     }
 
     transformarNumeroAColor(numero){
