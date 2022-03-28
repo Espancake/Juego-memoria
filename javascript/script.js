@@ -138,7 +138,7 @@ class Juego {
     }
 
     ganoElJuego(){
-        swal('Ahh prro, Traes el omnitrix','Felicitaciones!!', 'success')
+        swal('Ganaste felicitaciones','Felicitaciones!!', 'success')
         .then(()=>{
             this.inicializar()
         })
@@ -146,7 +146,7 @@ class Juego {
     }
     
     perdioElJuego(){
-        swal('GG IZII', 'Manco, desinstala el lol :v', 'error')
+        swal('perdiste', 'intentalo otra vez', 'error')
         .then(()=>{
             this.eliminarEventosClick()
             this.inicializar()
